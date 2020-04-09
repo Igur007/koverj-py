@@ -1,0 +1,12 @@
+# Pytest
+.cache/
+.pytest_cache/
+
+# Pycharm
+.idea/*
+
+# Other
+.DS_Store
+*.pyc
+koverj/test/
+poetry.lock
