@@ -40,6 +40,6 @@ pytest_plugins = [
 - pytest
 
 In order to collect data you have to run koverj server (thanks to):
-docker run -p 8086:8086 spirogov/koverj:0.1.0
+```docker run -p 8086:8086 spirogov/koverj:0.1.0```
 
 In order to see results in your browser add **koverj-browser-plugin** to your browser.
