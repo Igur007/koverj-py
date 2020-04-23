@@ -7,8 +7,9 @@ from koverj.common.service.koverj_service import KoverjService
 
 class KoverjClient:
 
-    def __init__(self, service: KoverjService = None):
-        self.service = service or KoverjService(base_url=ProjectConfig().service_url)
+    def __init__(self, config: ProjectConfig = None, service: KoverjService = None):
+        self.config = config or ProjectConfig()
+        self.service = service or KoverjService(base_url=self.config.service_url)
 
     def send_test_result(self, test_result: TestResult):
         try:
